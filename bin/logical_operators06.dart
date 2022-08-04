@@ -7,5 +7,11 @@ Given two integers a, b,  check the following statement "At least one of the num
         b(int): parameter b
     Returns:
         bool: answer
-*/        
-void main() {}
+*/
+bool func(int a, int b) {
+  return a % 2 == 1 && b % 2 == 0;
+}
+
+void main() {
+  print(func(5, 6));
+}
