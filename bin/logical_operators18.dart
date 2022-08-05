@@ -13,7 +13,7 @@ bool func(int a) {
   int c = 3;
   int d = 2;
   int e = 1;
-  if (a > b && b > c && c > d && d > e) {
+  if (a < b && b < c && c < d && d < e) {
     return true;
   }
   return false;
