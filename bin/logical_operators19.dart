@@ -9,12 +9,20 @@ Given a three digit integer x, return true if x is palindrome integer.
       bool: answer
 */
 bool func(int x) {
-  if (x % 2 == 0) {
-    return true;
+  int y1, y2, y3;
+  if (x < 100) {
+    return false;
   }
-  return false;
+  y1 = x % 10;
+  x = x ~/ 10;
+
+  y2 = x % 10;
+  x = x ~/ 10;
+
+  y3 = x % 10;
+  return y1 == y3;
 }
 
 void main() {
-  print(func(202));
+  print(func(121));
 }
